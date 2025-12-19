@@ -445,17 +445,16 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
 }
 
 .services-home-image {
     display: block;
     margin: 0 auto 20px;
-    padding-top: 100px;
+    padding-top: 5rem;
 }
 
 .services-home-image img {
-    height: 12rem;
+    height: 16rem;
 }
 
 .services-home-flex {
