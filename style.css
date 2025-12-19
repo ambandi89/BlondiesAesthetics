@@ -469,7 +469,7 @@ h2 {
 }
 
 .services-home-doodle img {
-    height: 10rem;
+    height: 12rem;
 }
 
 .services-home-button {
@@ -500,13 +500,13 @@ h2 {
 
 .gallery-home {
     background-color: var(--green);
-    padding: 40px 20px;
+    padding: 1.5rem 1rem;
     text-align: center;
 }
 
 .gallery-home h2 {
-    margin-bottom: 30px;
-    padding-top: 75px;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 .gallery-carousel-wrapper {
@@ -571,6 +571,7 @@ h2 {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+    margin-bottom: 3rem;
 }
 
 .indicator {
@@ -623,7 +624,7 @@ h2 {
 .gallery-home-button {
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 3rem auto;
 }
 
 .gallery-home-button button {
@@ -645,11 +646,11 @@ h2 {
 /* subscribe home */
 
 .subscribe-home {
-            height: 40rem;
-            width: auto;
-            padding-top: 75px;
-            background-color: var(--sand);
-        }
+    height: 27rem;
+    width: auto;
+    padding-top: 2rem;
+    background-color: var(--sand);
+}
 
         .subscribe-home h2 {
             font-family: "bruney", serif;
