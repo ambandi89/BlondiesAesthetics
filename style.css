@@ -425,15 +425,11 @@ h2 {
     background-color: var(--gray-blue);
     transition: 0.3s ease;
 }
-.intro-home-image {
-    position: absolute;
-}
 .intro-home-image img {
-    position: relative;
-    height: 20rem;
-    top: -140px;
-    left: -20px;
+    display: block;
     opacity: 0.45;
+    margin: auto;
+    height: 16rem;
 }
 
 
@@ -466,6 +462,7 @@ h2 {
 
 .services-home-flex h2 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .services-home-doodle img {
@@ -499,7 +496,8 @@ h2 {
 /* Gallery home */
 
 .gallery-home {
-    background-color: var(--green);
+    background: var(--green) url(img/BADoodlesPattern.png) center / cover;
+    background-repeat: repeat;
     padding: 1.5rem 1rem;
     text-align: center;
 }
