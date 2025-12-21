@@ -886,6 +886,9 @@ h2 {
     .services-home {
         height: 40rem;
     }
+    .services-home-image img {
+        height: 17rem;
+    }
 
     .services-home-doodle img {
         height: 10rem;
@@ -896,5 +899,8 @@ h2 {
     }
     .services-home-button {
         margin: 4rem auto;
+    }
+    .gallery-home {
+        height: 42rem;
     }
 }
