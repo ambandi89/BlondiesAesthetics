@@ -457,6 +457,8 @@ h2 {
 
 .services-home-image img {
     height: 16rem;
+    display: block;
+    margin: auto;
 }
 
 .services-home-flex-image {
