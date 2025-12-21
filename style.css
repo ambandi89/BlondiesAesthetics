@@ -361,7 +361,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "bruney", serif;
+    font-family: "poppins", serif;
 }
 
 .hero-button button:hover {
@@ -390,19 +390,19 @@ h2 {
 
 .intro-home {
     background-color: var(--sand);
-    height: 40rem;
+    height: 49rem;
 }
 .intro-home h2 {
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 5rem;
 }
 .intro-home p {
-    text-align: center;
+    text-align: left;
     font-family: "poppins", sans-serif;
     color: var(--dark-blue);
     font-size: 1.25rem;
-    margin: 25px;
+    margin: 0.5rem;
 }
 .intro-home-button {
     display: flex;
@@ -418,12 +418,17 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "bruney", serif;
+    font-family: "poppins", serif;
 }
 
 .intro-home-button button:hover {
     background-color: var(--gray-blue);
     transition: 0.3s ease;
+}
+.intro-home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .intro-home-image img {
     display: block;
@@ -454,7 +459,7 @@ h2 {
     height: 16rem;
 }
 
-.services-home-flex {
+.services-home-flex-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -484,7 +489,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "bruney", serif;
+    font-family: "poppins", serif;
 }
 
 .services-home-button button:hover {
@@ -497,10 +502,25 @@ h2 {
 /* Gallery home */
 
 .gallery-home {
-    background: var(--green) url(img/BADoodlesPattern.png) center / cover;
-    background-repeat: repeat;
-    padding: 1.5rem 1rem;
+    background-color: var(--green);
     text-align: center;
+    position: relative; /* Create positioning context */
+    height: 37rem;
+    width: auto;
+}
+
+.gallery-home::before {
+    content: ""; /* Required for pseudo-element to display */
+    position: absolute; /* Position it over the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/bapattern.png);
+    background-repeat: repeat;
+    background-size: 20rem 12rem;
+    opacity: 0.35;
+    pointer-events: none; /* Allow clicks to pass through to content below */
 }
 
 .gallery-home h2 {
@@ -521,7 +541,6 @@ h2 {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    background-color: var(--dark-blue);
 }
 
 .gallery-carousel-track {
@@ -634,7 +653,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "bruney", serif;
+    font-family: "poppins", serif;
 }
 
 .gallery-home-button button:hover {
@@ -825,4 +844,57 @@ h2 {
 
 .menu__link:hover {
   opacity: 1;
+}
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .intro-home {
+        height: 42rem;
+    }
+    .intro-home-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-home-text {
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+    .intro-home-text p {
+        text-align-last: left;
+        margin: 0.5rem;
+    }
+    .intro-home-image {
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+    .intro-home-image img {
+        height: 15rem;
+    }
+    .services-home-flex {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    .services-home {
+        height: 40rem;
+    }
+
+    .services-home-doodle img {
+        height: 10rem;
+    }
+    .services-home-flex-image {
+        display: block;
+        margin-top: 5rem;
+    }
+    .services-home-button {
+        margin: 4rem auto;
+    }
 }
