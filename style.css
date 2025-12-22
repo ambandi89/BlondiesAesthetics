@@ -28,6 +28,12 @@ html {
     src: url(fonts/Bruney.otf);
 }
 
+span {
+    line-height: 1.5;
+}
+p {
+    line-height: 1.5;
+}
 
 /* header start */
 
@@ -138,6 +144,7 @@ html {
     opacity: 1;
     transform: none;
     pointer-events: all;
+    z-index: 99;
   }
 
   .off-screen-menu ul {
@@ -346,6 +353,7 @@ h2 {
     font-family: "poppins", sans-serif;
     color: var(--dark-blue);
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .hero-button {
@@ -390,7 +398,7 @@ h2 {
 
 .intro-home {
     background-color: var(--sand);
-    height: 49rem;
+    height: 57rem;
 }
 .intro-home h2 {
     text-align: center;
@@ -402,12 +410,13 @@ h2 {
     font-family: "poppins", sans-serif;
     color: var(--dark-blue);
     font-size: 1.25rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
+    line-height: 1.5;
 }
 .intro-home-button {
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 2.2rem auto;
 }
 
 .intro-home-button button {
@@ -857,7 +866,7 @@ h2 {
         font-size: 3rem;
     }
     .intro-home {
-        height: 42rem;
+        height: 51rem;
     }
     .intro-home-flex {
         display: flex;
@@ -871,6 +880,66 @@ h2 {
     .intro-home-text p {
         text-align-last: left;
         margin: 0.5rem;
+        line-height: 1.5;
+    }
+    .intro-home-image {
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+    .intro-home-image img {
+        height: 15rem;
+    }
+    .services-home-flex {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    .services-home {
+        height: 40rem;
+    }
+    .services-home-image img {
+        height: 17rem;
+    }
+
+    .services-home-doodle img {
+        height: 10rem;
+    }
+    .services-home-flex-image {
+        display: block;
+        margin-top: 5rem;
+    }
+    .services-home-button {
+        margin: 4rem auto;
+    }
+    .gallery-home {
+        height: 42rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .intro-home {
+        height: 51rem;
+    }
+    .intro-home-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-home-text {
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+    .intro-home-text p {
+        text-align-last: left;
+        margin: 0.5rem;
+        line-height: 1.5;
     }
     .intro-home-image {
         margin: 1rem;
