@@ -398,7 +398,7 @@ h2 {
 
 .intro-home {
     background-color: var(--sand);
-    height: 57rem;
+    height: 70rem;
 }
 .intro-home h2 {
     text-align: center;
@@ -409,10 +409,14 @@ h2 {
     text-align: left;
     font-family: "poppins", sans-serif;
     color: var(--dark-blue);
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.75;
 }
+.intro-home-text {
+        width: 75%;
+        margin: 2rem auto;
+    }
 .intro-home-button {
     display: flex;
     justify-content: center;
@@ -444,6 +448,10 @@ h2 {
     opacity: 0.65;
     margin: auto;
     height: 12rem;
+}
+#dropper {
+    height: auto;
+    max-width: 50%;
 }
 
 
@@ -508,7 +516,6 @@ h2 {
     transition: 0.3s ease;
 }
 
-/* Gallery home */
 
 /* Gallery home */
 
@@ -865,30 +872,65 @@ h2 {
     h2 {
         font-size: 3rem;
     }
-    .intro-home {
-        height: 51rem;
-    }
-    .intro-home-flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .intro-home-text {
-        margin: 1rem;
-        margin-top: 3rem;
+        width: 75%;
+        margin: 2rem auto;
+    }
+    .intro-home {
+        height: 65rem;
     }
     .intro-home-text p {
-        text-align-last: left;
+        line-height: 1.75;
+    }
+
+    /* .intro-home {
+        height: 55rem;
+        position: relative;
+    }
+
+    .intro-home-flex {
+        display: block;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .intro-home-text {
+        width: 50%;
+        margin: 4rem auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .intro-home-text p {
+        text-align: left;
         margin: 0.5rem;
-        line-height: 1.5;
+        line-height: 1.75;
     }
+
     .intro-home-image {
-        margin: 1rem;
-        margin-top: 3rem;
+        height: 0;
+        margin: 0;
+        padding: 0;
     }
-    .intro-home-image img {
-        height: 15rem;
+
+    #Woman {
+        position: absolute;
+        top: -10rem;
+        left: -1rem;
+        height: 21rem;
+        opacity: 0.3;
+        z-index: 1;
     }
+
+    #dropper {
+       position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        height: 18rem;
+        opacity: 0.2;
+        z-index: 1;
+    } */
     .services-home-flex {
         display: flex;
         justify-content: center;
@@ -917,7 +959,7 @@ h2 {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1199px) {
+@media (min-width: 801px) and (max-width: 1199px) {
     .hero-text h1 {
         font-size: 5rem;
     }
@@ -928,9 +970,7 @@ h2 {
         height: 51rem;
     }
     .intro-home-flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
     }
     .intro-home-text {
         margin: 1rem;
